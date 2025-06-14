@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
+
+.top_links {
+    font-size: 20px;
+}
+
+/*!*.ctm {*!-*/
+/*!*    background-image: url(pexels-markusspiske-1089438.jpg);*!*/
+/*!*    background-attachment: fixed;*!*/
+/*!*    background-size: cover;*!*/
+/*!*}*!*/
+/*:root {*/
+/*    --primary: #873e23; !* Rich brown - representing earth/clay *!*/
+/*    --secondary: #c5a572; !* Gold - representing divinity *!*/
+/*    --accent: #4b6f8c; !* Blue - representing water/heaven *!*/
+/*    --background: #f5e6d3; !* Light sand color - desert theme *!*/
+/*    --text: #2c1810;*/
+/*}*/
+
+body {
+    font-family: 'Noto Serif', serif; /* Classic, scroll-like font for body text */
+}
+
+h1, h2, h3, nav a {
+    font-family: 'Cinzel', serif; /* Ornate font for headings */
+}
+
+
+.body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.ctm {
+    background-image: url(pexels-markusspiske-1089438.jpg);
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding-left: 15px;
+    width: 98vw;
+    height: 160vh;
+}
+
+
+.tagged {
+    font-size: 20px;
+    color: white;
+    background-color: #FF0000;
+}
+.pictures-of-me {
+    padding-top: 20px;
+    margin: auto;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    height: 424px;
+    width: 625px;
+}
+.black-out {
+    color: white;
+}
+.contactlink {
+    color: #fff100;
+}
+
+.e-mail {
+    color: #fff100;
+}
+
+.vid-logo {
+    display: compact;
+    height: 150px;
+    width: 220px;
+}
+
+.feettablet {
+    background-color: lightskyblue;
+    color: white;
+    background-position: 50%;
+}
+
+.me-pipe {
+    color: red;
+    background-color: white;
+}
+
+.chainedout {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.invis {
+    color: white;
+}
+
+.cookie_hunting {
+    margin-left: 3px;
+    height: 150px;
+    width: 999px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+#drew {
+    color: white;
+}
+
+#joel {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.togglebutton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Comfortable padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    font-size: 16px; /* Readable font size */
+    margin: 10px 0; /* Add some spacing around the button */
+}
+
+/* Button hover effect */
+.togglebutton:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Button active state (when clicked) */
+.togglebutton:active {
+    background-color: #3d8b40; /* Even darker when clicked */
+    transform: scale(0.98); /* Slight shrink effect when clicked */
+}
+
+.video-player {
+    width: 100%; /* Makes video responsive to container width */
+    height: 70px; /* Maintains aspect ratio */
+    /* Centers the video with some spacing */
+    display: block; /* Helps with centering */
+    margin: auto auto 5px;
+}
+
+
+
+
+
+.credits-section {
+    margin: 2em 0;
+}
+
+.credits-section h2 {
+    margin-bottom: 1em;
+}
+
+.credits-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.credits-section li {
+    margin-bottom: 0.5em;
+}
+
+
+
+.password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-container {
+    background: black;
+    padding: 20px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+}
+
+#passwordInput {
+    padding: 5px 10px;
+}
+
+#passwordInput2 {
+    padding: 5px 10px;
+}
+
+#mike {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    video {
+        display: none;
+    }
+    .cookie_hunting {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+        color: red;
+        background-color: white;
+        border-radius: 5px;
+
+    }
+    nav {
+        display: none; /* Hide nav by default on mobile */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        right: 0;
+        background-color: white; /* Or your preferred color */
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+
+
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 60px 20px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+
+    }
+
+    .navbar.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    nav a {
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .navbar a {
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    hr {
+        display: none;
+    }
+
+    .ctm {
+        background-image: url('pexels-markusspiske-1089438.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 300vh; /* This makes it take up the full viewport height */
+        width: 100%;
+        padding: 3px;
+
+    .pictures-of-me {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    }
+}
+
+/*@media screen and (min-width: 768px) and (max-width: 1024px) {*/
+/*    !* iPad-specific styles here *!*/
+/*}*/
+
+/*for the binary colors*/
+
+.binary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e0e0e; /* Dark background just for this container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+}
+
+/* Binary Line Style */
+.binary-line {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00; /* Neon green */
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.8), 0 0 10px rgba(0, 255, 0, 0.6), 0 0 15px rgba(0, 255, 0, 0.4);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    animation: blink 1.5s infinite alternate; /* Blinking effect */
+}
+
+/* Blinking effect animation */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+

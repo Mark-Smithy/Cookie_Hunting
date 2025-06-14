@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Authentication {CHURCHES}</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/gif" href="cookiepic.png">
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+            // Change hamburger icon
+            this.textContent = navbar.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
+                navbar.classList.remove('show');
+                hamburger.textContent = '☰';
+            }
+        });
+    });
+</script>
+<header>
+    <!--        <img src="pixil-frame-2.png" alt="">-->
+    <div>
+        <video class="vid-logo" autoplay loop muted playsinline preload="auto">
+            <source src="Egg%20Hunt.mp4" type="video/mp4">
+            This browser does not display the video tag.
+        </video>
+        <img class="cookie_hunting" src="Screen Shot 2025-06-11 at 3.29.47 PM.png" alt="In a weird font that says Cookie Hunting">
+    </div>
+    <hr>
+    <!--        <a class="top_links" href="home.html">Home</a>--> <!-- not needed-->
+    <!--        <a class="top_links" href="hotels.html">Hotels</a>-->
+    <!--        <a class="top_links" href="attractions.html">Attractions</a>-->
+    <!--        <a class="invis" href="">No!!</a>-->
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="navbar" id="navbar">
+        <a class="top_links" href="index.html">Main</a>
+        <a class="top_links" href="7_1:7.html">7 Sabbath</a>
+        <a class="top_links" href="7_2:7.html">7 Year</a>
+        <a class="top_links" href="7_3:7.html">7 Trumpets/Bowls</a>
+        <a class="top_links" href="7_4:7.html">7 Days</a>
+        <a class="top_links" href="7_5:7.html">7 Forgive</a>
+        <a class="tagged" href="7_6:7.html">7 Churches</a>
+        <a class="top_links" href="7_7:7.html">7 Free</a>
+        <a class="top_links" href="contact_me_copy.html">Contact Me</a>
+        <a class="top_links" href="credits.html">Credits</a>
+    </nav>
+    <hr>
+</header>
+<div>
+    <div id="mike">
+        <div class="binary-container">
+            <div class="binary-line">010000</div>
+            <div class="binary-line">010010</div>
+            <div class="binary-line">001001</div>
+            <div class="binary-line">011010</div>
+            <div class="binary-line">000101</div>
+            <div class="binary-line">Once you solved the code, save it for later. This word is the 6th word of seven words. This word is the 2nd word of the whole sentence containing seven words</div>
+            <p class="binary-line">GO TO:
+                <br>
+                I’m full of cans, boxes, and jars,
+                <br>
+                I keep your food safe—near and far.
+                <br>
+                Not the fridge, but close to the meal,
+                <br>
+                Where am I? Go take a feel!
+            </p>
+        </div>
+    </div>
+    <div id="passwordPrompt2" class="password-overlay">
+        <div class="password-container">
+            <h2>Revelation 1:4-6</h2>
+            <p>"John to the seven churches that are in Asia: Grace to you and peace from him who is and who was and who is to come, and from the seven spirits who are before his throne, and from Jesus Christ the faithful witness, the firstborn of the dead, and the ruler of kings on earth. To him who loves us and has freed us from our sins by his blood and made us a kingdom, priests to his God and Father, to him be glory and dominion forever and ever. Amen."</p>
+            <h2>Revelation 1:17-20</h2>
+            <p>"When I saw him, I fell at his feet as though dead. But he laid his right hand on me, saying, “Fear not, I am the first and the last, and the living one. I died, and behold I am alive forevermore, and I have the keys of Death and Hades. Write therefore the things that you have seen, those that are and those that are to take place after this. As for the mystery of the seven stars that you saw in my right hand, and the seven golden lampstands, the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches."</p>
+            <h3>Question:</h3>
+            <p>Let f(x) represent the total contribution from all seven churches. The function is defined as: f(x) = x<sup>3</sup> + 3x<sup>2</sup> + 2x + 7 Where x represents a factor related to the churches (perhaps attendance, offerings, or influence).
+
+                What is the value of f(x) when x = 4?</p>
+            <p>Enter your answer below:</p>
+            <label for="passwordInput2">
+                <input type="text" id="passwordInput2">
+            </label>
+            <br>
+            <button class="stewart" onclick="checkPassword2()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword2() {
+            const password = document.getElementById('passwordInput2').value;
+            if (password === "127") {
+                document.getElementById('passwordPrompt2').style.display = 'none';
+                document.getElementById('mike').style.display = 'block';
+            } else {
+                alert('Incorrect answer! Try again.');
+                document.getElementById('passwordInput2').value = '';
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput2').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword2();
+            }
+        });
+
+        document.getElementById('passwordInput2').focus();
+    </script>
+    <div id="passwordPrompt" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <label for="passwordInput">
+                <input type="password" id="passwordInput">
+            </label>
+            <br>
+            <button class="stewart" onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === "1931") {
+                document.getElementById('passwordPrompt').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password!');
+                document.getElementById('passwordInput').value = '';
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+</div>
+
+</body>
+</html>

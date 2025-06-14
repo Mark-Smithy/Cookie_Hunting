@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Authentication {TRUMPETS/BOWLS}</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/gif" href="cookiepic.png">
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+            // Change hamburger icon
+            this.textContent = navbar.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
+                navbar.classList.remove('show');
+                hamburger.textContent = '☰';
+            }
+        });
+    });
+</script>
+<header>
+    <!--        <img src="pixil-frame-2.png" alt="">-->
+    <div>
+        <video class="vid-logo" autoplay loop muted playsinline preload="auto">
+            <source src="Egg%20Hunt.mp4" type="video/mp4">
+            This browser does not display the video tag.
+        </video>
+        <img class="cookie_hunting" src="Screen Shot 2025-06-11 at 3.29.47 PM.png" alt="In a weird font that says Cookie Hunting">
+    </div>
+    <hr>
+    <!--        <a class="top_links" href="home.html">Home</a>--> <!-- not needed-->
+    <!--        <a class="top_links" href="hotels.html">Hotels</a>-->
+    <!--        <a class="top_links" href="attractions.html">Attractions</a>-->
+    <!--        <a class="invis" href="">No!!</a>-->
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="navbar" id="navbar">
+        <a class="top_links" href="index.html">Main</a>
+        <a class="top_links" href="7_1:7.html">7 Sabbath</a>
+        <a class="top_links" href="7_2:7.html">7 Year</a>
+        <a class="tagged" href="7_3:7.html">7 Trumpets/Bowls</a>
+        <a class="top_links" href="7_4:7.html">7 Days</a>
+        <a class="top_links" href="7_5:7.html">7 Forgive</a>
+        <a class="top_links" href="7_6:7.html">7 Churches</a>
+        <a class="top_links" href="7_7:7.html">7 Free</a>
+        <a class="top_links" href="contact_me_copy.html">Contact Me</a>
+        <a class="top_links" href="credits.html">Credits</a>
+    </nav>
+    <hr>
+</header>
+<div>
+    <div id="mike">
+        <div class="binary-container">
+            <div class="binary-line">001001</div>
+            <div class="binary-line">010011</div>
+            <div class="binary-line">Once you solved the code, save it for later. This word is the 3rd word of seven words. This word is the 3rd word of the whole sentence containing seven words</div>
+            <p class="binary-line">GO TO:
+                <br>
+                Need a sweet fix? Here’s the cue,
+                <br>
+                The sugar’s waiting, just for you!
+                <br>
+                Stir it in, make it right,
+                <br>
+                Sweeten up your day tonight!
+
+            </p>
+        </div>
+    </div>
+    <div id="passwordPrompt2" class="password-overlay" style="text-size: 1.5em; font-family: 'Times New Roman', Times, serif;">
+        <div class="password-container">
+            <h2>Revelation 8:6</h2>
+            <p>"Now the seven angels who had the seven trumpets prepared to blow them."</p>
+            <h2>Revelation 9:20-21</h2>
+            <p>"The rest of mankind, who were not killed by these plagues, did not repent of the works of their hands nor give up worshiping demonsand idols of gold and silver and bronze and stone and wood, which cannot see or hear or walk, nor did they repent of their murders or their sorceries or their sexual immorality or their thefts.</p>
+            <h2>Revelation 16:1</h2>
+            <p>"Then I heard a loud voice from the temple telling the seven angels, 'Go and pour out on the earth the seven bowls of the wrath of God.’"</p>
+            <h2>Revelation 16:17-21</h2>
+            <p>"The seventh angel poured out his bowl into the air, and a loud voice came out of the temple, from the throne, saying, 'It is done!' And there were flashes of lightning, rumblings, peals of thunder, and a great earthquake such as there had never been since man was on the earth, so great was that earthquake. The great city was split into three parts, and the cities of the nations fell, and God remembered Babylon the great, to make her drain the cup of the wine of the fury of his wrath. And every island fled away, and no mountains were to be found. And great hailstones, about one hundred pounds each, fell from heaven on people; and they cursed God for the plague of the hail, because the plague was so severe."</p>
+            <h3>Question:</h3>
+            <p>In the Book of Revelation, seven trumpets are used to symbolize warnings. Let the trumpets be represented by the numbers t <sub>1</sub>, t<sub>2</sub>, t<sub>3</sub>, …, t<sub>7</sub>, with each trumpet corresponding to a certain event or judgment. The events are sequenced, and each trumpet’s value is related to the previous trumpet’s value. The sequence of trumpet values follows this rule:
+                t<sub>1</sub> = 3 (the first trumpet)
+
+                For each subsequent trumpet, the value of
+                t<sub>n</sub> (where n > 1) is given by the formula:
+                t<sub>n</sub> = 2 × t^(n-1) + 1
+
+                What is the value of t<sub>4</sub>?</p>
+            <p>Enter your answer below:</p>
+            <label for="passwordInput2">
+                <input type="text" id="passwordInput2">
+            </label>
+            <br>
+            <button class="stewart" onclick="checkPassword2()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword2() {
+            const password = document.getElementById('passwordInput2').value;
+            if (password === "31") {
+                document.getElementById('passwordPrompt2').style.display = 'none';
+                document.getElementById('mike').style.display = 'block';
+            } else {
+                alert('Incorrect answer! Try again.');
+                document.getElementById('passwordInput2').value = '';
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput2').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword2();
+            }
+        });
+        document.getElementById('passwordInput2').focus();
+    </script>
+    <div id="passwordPrompt" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <label for="passwordInput">
+                <input type="password" id="passwordInput">
+            </label>
+            <br>
+            <button class="stewart" onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === "6290") {
+                document.getElementById('passwordPrompt').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password!');
+                document.getElementById('passwordInput').value = '';
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Augusta - Contact_Me</title>
+    <link rel="icon" type="image/gif" href="cookiepic.png">
+    <style>
+        body {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+            // Change hamburger icon
+            this.textContent = navbar.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
+                navbar.classList.remove('show');
+                hamburger.textContent = '☰';
+            }
+        });
+    });
+</script>
+<header>
+    <!--            <img src="pixil-frame-2.png" alt="">-->
+    <div>
+        <video class="vid-logo" autoplay loop muted playsinline preload="auto">
+            <source src="Egg%20Hunt.mp4" type="video/mp4">
+            This browser does not display the video tag.
+        </video>
+        <img class="cookie_hunting" src="Screen Shot 2025-06-11 at 3.29.47 PM.png" alt="In a weird font that says Egg Hunting">
+    </div>
+    <hr>
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="navbar" id="navbar">
+        <a class="top_links" href="index.html">Main</a>
+        <a class="top_links" href="7_1:7.html">7 Sabbath</a>
+        <a class="top_links" href="7_2:7.html">7 Year</a>
+        <a class="top_links" href="7_3:7.html">7 Seals</a>
+        <a class="top_links" href="7_4:7.html">7 Trumpets/Bowls</a>
+        <a class="top_links" href="7_5:7.html">7 Days</a>
+        <a class="top_links" href="7_6:7.html">7 Forgive</a>
+        <a class="top_links" href="7_7:7.html">7 Churches</a>
+        <a class="tagged" href="contact_me_copy.html">Contact Me</a>
+        <a class="top_links" href="credits.html">Credits</a>
+    </nav>
+    <hr>
+</header>
+<div class="ctm" id="ctm">
+    <div>
+        <img class="pictures-of-me" src="pic-of-me2-copy.jpeg" height="800" width="1200" alt="Another picture of me"/>
+        <!--     800 400
+                 1200 600
+        -->
+    </div>
+    <div>
+        <p class="black-out">
+            Hi! My name is Drew. I like to code. English is my second language. I also know a bit about python, java,
+            javascript, and bash. Although I know these coding languages, I can only use one at a time, unless of course the
+            coding language needs html, css, and javascript. If I was to say which language is the easiest, I would say python,
+            because it actually <span><i>is</i></span> the easiest to work with. I also know more python than the other coding languages.
+
+        </p>
+        <div class="black-out">
+            <h2>If you want to talk to someone about the design of this website, please contact {<b><i><a class="contactlink" href="https://www.w3schools.com/html/default.asp" target="_blank">REDACTED FOR SECURITY</a></i></b>}: {<i><b><a class="e-mail" href="mailto:blahblah@gmail.com">REDACTED FOR SECURITY</a></b></i>}</h2>
+            <h2>If you need to contact me, please be sure to email me at: {<i><b><a class="e-mail" href="mailto:blahblue@gmail.com">REDACTED FOR SECURITY</a></b></i>} </h2>
+            <h3>If you need to contact me <b><i>NOW</i></b>, please use my number: {<b><i><a class="contactlink" href="https://www.bing.com/search?FORM=U523DF&PC=U536&q=I+Don%27t+have+a+number.&PC=U316&FORM=CHROMN">REDACTED FOR SECURITY</a></i></b>}</h3>
+            <h4>If you just want to chat, go to my <span class="feettablet">Facebook</span> account, username: {<b><i><a class="contactlink" href="https://www.facebook.com/">REDACTED FOR SECURITY</a></i></b>}</h4>
+            <h5>If you just want to know who I am, please visit my <span class="chainedout">LinkedIn</span> profile page, username: {<b><i><a class="contactlink" href="https://www.linkedin.com/">REDACTED FOR SECURITY</a></i></b>}</h5>
+            <h6>If you just want to see my dogs, who are famous by the way, visit them on <span class="me-pipe">Youtube</span>, profile name: {<b><i><a class="contactlink" href="https://www.youtube.com/" target="_blank">REDACTED FOR SECURITY</a></i></b>}</h6>
+            <h7>If you don't do any of the above, please refer to my secretary, name: {<b><i><a class="contactlink" href="https://www.w3schools.com/html/default.asp" target="_blank">REDACTED FOR SECURITY</a></i></b>}</h7>
+            <!-- I know that h7 is not an actual html tag, just testing. I also know that if something is wrong, this program will still run anyway. -->
+            <h6>Else: <a class="e-mail" href="mailto:1234567890@gmail.com">George's Email/</a></h6>
+            <h2 id="extra">I have other ways of contact, but I think you know what will happen. {<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}{<b><i><a class="contactlink" href="#">REDACTED FOR SECURITY</a></i></b>}</h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>

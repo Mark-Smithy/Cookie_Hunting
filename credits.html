@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Credits - {JESUS}</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/gif" href="cookiepic.png">
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+            // Change hamburger icon
+            this.textContent = navbar.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
+                navbar.classList.remove('show');
+                hamburger.textContent = '☰';
+            }
+        });
+    });
+</script>
+<header>
+    <!--        <img src="pixil-frame-2.png" alt="">-->
+    <div>
+        <video class="vid-logo" autoplay loop muted playsinline preload="auto">
+            <source src="Egg%20Hunt.mp4" type="video/mp4">
+            This browser does not display the video tag.
+        </video>
+        <img class="cookie_hunting" src="Screen Shot 2025-06-11 at 3.29.47 PM.png" alt="In a weird font that says Cookie Hunting">
+    </div>
+    <hr>
+    <!--        <a class="top_links" href="home.html">Home</a>--> <!-- not needed-->
+    <!--        <a class="top_links" href="hotels.html">Hotels</a>-->
+    <!--        <a class="top_links" href="attractions.html">Attractions</a>-->
+    <!--        <a class="invis" href="">No!!</a>-->
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="navbar" id="navbar">
+        <a class="top_links" href="index.html">Main</a>
+        <a class="top_links" href="7_1:7.html">7 Sabbath</a>
+        <a class="top_links" href="7_2:7.html">7 Year</a>
+        <a class="top_links" href="7_3:7.html">7 Seals</a>
+        <a class="top_links" href="7_4:7.html">7 Trumpets/Bowls</a>
+        <a class="top_links" href="7_5:7.html">7 Days</a>
+        <a class="top_links" href="7_6:7.html">7 Forgive</a>
+        <a class="top_links" href="7_7:7.html">7 Churches</a>
+        <a class="top_links" href="contact_me_copy.html">Contact Me</a>
+        <a class="tagged" href="credits.html">Credits</a>
+    </nav>
+    <hr>
+    <div class="container">
+
+        <h1>Credits</h1>
+
+        <div class="credits-section">
+            <h2>Development Team</h2>
+            <ul>
+                <li>Drew Mansen - Developer</li>
+                <li>Ben Mansen - Sharpening Pencils + Coupon Designer</li>
+                <li>Artificial Intelligence - Content Designer and Creator</li>
+                <li>Everyone Else - Great Ideas</li>
+                <!-- Add more team members as needed -->
+            </ul>
+        </div>
+
+        <div class="credits-section">
+            <h2>Assets</h2>
+            <ul>
+                <li>Web Engine: [Webstorm]</li>
+                <li>Code Source: [Github]</li>
+                <li>Web Source: [Netlify]</li>
+                <li>Computer: [MacOS Monterey]</li>
+                <li>Version: [12.4]</li>
+                <li>Year: [Early 2015]</li>
+                <li>Processor: [2.9 GHz Dual-Core Intel Core i5]</li>
+                <li>Serial Number: WhyDoUNeedToKnow?</li>
+                <li>Art Design: [Canva]</li>
+            </ul>
+        </div>
+
+        <div class="credits-section">
+            <h2>Special Thanks</h2>
+            <ul>
+                <li>Drew Mansen</li>
+                <li>Beta Testers</li>
+                <li>Cyber Analysts</li>
+                <li>AI</li>
+                <li>My Pencil - Named Mark</li>
+                <li>Canva - Web Design</li>
+                <li>Noah Stockman - Advice</li>
+                <!-- Add more acknowledgments as needed -->
+            </ul>
+        </div>
+    </div>
+</header>
+<div>
+
+</div>
+
+</body>
+</html>

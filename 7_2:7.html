@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Authentication {SEALS}</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/gif" href="cookiepic.png">
+</head>
+<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+            // Change hamburger icon
+            this.textContent = navbar.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
+                navbar.classList.remove('show');
+                hamburger.textContent = '☰';
+            }
+        });
+    });
+</script>
+<header>
+    <!--        <img src="pixil-frame-2.png" alt="">-->
+    <div>
+        <video class="vid-logo" autoplay loop muted playsinline preload="auto">
+            <source src="Egg%20Hunt.mp4" type="video/mp4">
+            This browser does not display the video tag.
+        </video>
+        <img class="cookie_hunting" src="Screen Shot 2025-06-11 at 3.29.47 PM.png" alt="In a weird font that says Cookie Hunting">
+    </div>
+    <hr>
+    <!--        <a class="top_links" href="home.html">Home</a>--> <!-- not needed-->
+    <!--        <a class="top_links" href="hotels.html">Hotels</a>-->
+    <!--        <a class="top_links" href="attractions.html">Attractions</a>-->
+    <!--        <a class="invis" href="">No!!</a>-->
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="navbar" id="navbar">
+        <a class="top_links" href="index.html">Main</a>
+        <a class="top_links" href="7_1:7.html">7 Sabbath</a>
+        <a class="tagged" href="7_2:7.html">7 Year</a>
+        <a class="top_links" href="7_3:7.html">7 Trumpets/Bowls</a>
+        <a class="top_links" href="7_4:7.html">7 Days</a>
+        <a class="top_links" href="7_5:7.html">7 Forgive</a>
+        <a class="top_links" href="7_6:7.html">7 Churches</a>
+        <a class="top_links" href="7_7:7.html">7 Free</a>
+        <a class="top_links" href="contact_me_copy.html">Contact Me</a>
+        <a class="top_links" href="credits.html">Credits</a>
+    </nav>
+    <hr>
+</header>
+<div>
+    <div id="mike">
+        <div class="binary-container">
+            <div class="binary-line">010010</div>
+            <div class="binary-line">001111</div>
+            <div class="binary-line">001111</div>
+            <div class="binary-line">001101</div>
+            <div class="binary-line">Once you solved the code, save it for later. This word is the 2nd word of seven words. This word is the 7th word of the whole sentence containing seven words</div>
+            <p class="binary-line">GO TO:
+                <br>
+                I’m outside, but still inside,
+                <br>
+                With walls around, I’m your cozy guide.
+                <br>
+                Sunshine, fresh air, and space to relax,
+                <br>
+                Where am I? Find me out back!
+            </p>
+        </div>
+    </div>
+    <div id="passwordPrompt2" class="password-overlay">
+        <div class="password-container">
+            <h2>Revelation 5:1</h2>
+            <p>"Then I saw in the right hand of him who was seated on the throne a scroll written within and on the back, sealed with seven seals."</p>
+            <h2>Revelation 6:12-17</h2>
+            <p>"When he opened the sixth seal, I looked, and behold, there was a great earthquake, and the sun became black as sackcloth, the full moon became like blood, and the stars of the sky fell to the earth as the fig tree sheds its winter fruit when shaken by a gale. The sky vanished like a scroll that is being rolled up, and every mountain and island was removed from its place. Then the kings of the earth and the great ones and the generals and the rich and the powerful, and everyone, slave and free, hid themselves in the caves and among the rocks of the mountains,calling to the mountains and rocks, 'Fall on us and hide us from the face of him who is seated on the throne, and from the wrath of the Lamb, for the great day of their wrath has come, and who can stand?'”</p>
+            <div>A) 17</div>
+            <div>B) 18</div>
+            <div>C) 19</div>
+            <div>D) 20</div>
+            <h3>Question:</h3>
+            <p>As the seals on a scroll are opened, the number of cosmic signs increases in a linear pattern. When the 4th seal is opened, there are 10 cosmic signs recorded. When the 6th seal is opened, there are 16 cosmic signs. Assuming this pattern continues, how many cosmic signs will be recorded when the 7th seal is opened?</p>
+            <p>Enter your answer below:</p>
+            <label for="passwordInput2">
+                <input type="text" id="passwordInput2">
+            </label>
+            <br>
+            <button class="stewart" onclick="checkPassword2()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword2() {
+            const password = document.getElementById('passwordInput2').value;
+            if (password === "19" || password === "c" || password === "C") {
+                document.getElementById('passwordPrompt2').style.display = 'none';
+                document.getElementById('mike').style.display = 'block';
+            } else {
+                alert('Incorrect answer! Try again.');
+                document.getElementById('passwordInput2').value = '';
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput2').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword2();
+            }
+        });
+
+        document.getElementById('passwordInput2').focus();
+    </script>
+    <div id="passwordPrompt" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <label for="passwordInput">
+                <input type="password" id="passwordInput">
+            </label>
+            <br>
+            <button class="stewart" onclick="checkPassword()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === "2222") {
+                document.getElementById('passwordPrompt').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password!');
+                document.getElementById('passwordInput').value = '';
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+</div>
+
+</body>
+</html>

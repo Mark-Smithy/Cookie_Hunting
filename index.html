@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+
+
+    <!--    <script src="index.js"></script>-->
+    <title>Cookie Hunting</title>
+    <link rel="icon" type="image/gif" href="cookiepic.png">
+</head>
+<body>
+<script>
+    function toggleParagraph() {
+        const paragraph = document.getElementById('toggleParagraph');
+        paragraph.classList.toggle('hidden');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        // Toggle menu when hamburger is clicked
+        hamburger.addEventListener('click', function() {
+            navbar.classList.toggle('show');
+            // Change hamburger icon
+            this.textContent = navbar.classList.contains('show') ? '✕' : '☰';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbar.contains(event.target) && !hamburger.contains(event.target)) {
+                navbar.classList.remove('show');
+                hamburger.textContent = '☰';
+            }
+        });
+    });
+
+
+</script>
+<header>
+    <!--        <img src="pixil-frame-2.png" alt="">-->
+    <div>
+        <video class="vid-logo" autoplay loop muted playsinline preload="auto">
+            <source src="Egg%20Hunt.mp4" type="video/mp4">
+            This browser does not display the video tag.
+        </video>
+        <img class="cookie_hunting" src="Screen Shot 2025-06-11 at 3.29.47 PM.png" alt="In a weird font that says Cookie Hunting">
+    </div>
+    <hr>
+    <!--        <a class="top_links" href="home.html">Home</a>--> <!-- not needed-->
+    <!--        <a class="top_links" href="hotels.html">Hotels</a>-->
+    <!--        <a class="top_links" href="attractions.html">Attractions</a>-->
+    <!--        <a class="invis" href="">No!!</a>-->
+    <button class="hamburger" id="hamburger">☰</button>
+    <nav class="navbar" id="navbar">
+        <a class="tagged" href="index.html">Main</a>
+        <a class="top_links" href="7_1:7.html">7 Sabbath</a>
+        <a class="top_links" href="7_2:7.html">7 Year</a>
+        <a class="top_links" href="7_3:7.html">7 Seals</a>
+        <a class="top_links" href="7_4:7.html">7 Trumpets/Bowls</a>
+        <a class="top_links" href="7_5:7.html">7 Days</a>
+        <a class="top_links" href="7_6:7.html">7 Forgive</a>
+        <a class="top_links" href="7_7:7.html">7 Churches</a>
+        <a class="top_links" href="contact_me_copy.html">Contact Me</a>
+        <a class="top_links" href="credits.html">Credits</a>
+    </nav>
+    <hr>
+</header>
+<div>
+    <br>
+    <video class="video-player" controls>
+        <source src="Untitled design.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p>
+        Welcome to this most intellectually stimulating and, dare I say, eminently profound activity—Cookie Hunting. Permit me to expound upon the intricacies of this engaging exercise, created by the brilliant and technologically astute Drew, whose prowess in web design and cryptographic methodology is rivaled only by the monumental proportions of the pumpkins I cultivate. And, I assure you, my pumpkins are so colossal they would cause a spectacle at any horticultural exhibition—though, again, I digress. The structure of this game is, in essence, straightforward, yet imbued with sufficient complexity to render it captivating. The primary mechanism of the game revolves around Drew’s exquisitely constructed website, a platform designed with a level of precision akin to the meticulous care with which I nurture my prized pumpkins. Although the game itself is deceptively simple in its conception, much like the planting of a seed, it is imbued with a depth of challenge—akin to the unpredictable nature of growing pumpkins whose size, I might add, could easily eclipse that of the average person. But I digress. To commence, The process begins with a securely delivered document—personally handed by Drew—which contains the requisite password to access the first account on Drew’s innovative website. This, however, is not a mere foray into basic digital access; it is a two-step authentication process, a mechanism designed to ensure the highest standards of cybersecurity, much like the protection I afford my pumpkins from pests and the vagaries of nature, though on a much grander, more technologically sophisticated scale. Then you will stumble upon a difficult challenge. This challenge requires the skill of Math and problem-solving. Upon entering the answer to the math question, a sequence of binary digits—ones and zeroes—will be revealed, and it is here that the challenge truly begins. These seemingly enigmatic numbers, which might at first appear to be nothing more than an incomprehensible jumble, will ultimately yield clarity—should you possess the requisite understanding of the system that underpins them. Drew shall provide you with a cheat sheet, containing a simple, yet highly effective, cipher: 1 = A, 2 = B, 3 = C, and so forth. The implication of this code is self-evident—decoding the sequence will lead to a word, one letter at a time, much as one would decipher the true nature of a spectacularly large pumpkin as it emerges from the soil after months of careful cultivation. For example, should you encounter the number 20 in the binary sequence, you will easily deduce that the corresponding letter is T. This process, while simple in its underlying logic, requires careful attention to detail and patience—virtues which I have honed over countless seasons of nurturing pumpkins of such prodigious size that they could, with ease, dwarf entire buildings. Upon completing the decoding process and unveiling the word, this newly acquired string of characters will serve as the key to unlocking the second phase of authentication. Upon successful entry, you will be prompted to identify a particular room. But, as you might have guessed, not every room contains the answer you seek. One room, and one room alone, will harbor the next password—hidden, no doubt, in plain sight, much like how the true girth of my pumpkins is revealed only after the husks have been peeled away. Once you locate this password, you will utilize it to unlock the next puzzle. My friend, I encourage you to proceed with both diligence and wit, for though the task may seem trivial at first, it is laden with the potential for personal discovery. And, as always, should you ever find yourself in need of advice on growing pumpkins of such enormous proportions that they could double as landmarks, you know where to find me.
+    </p>
+    <button class="togglebutton" onclick="toggleParagraph()">Click to read an easier description of this description</button>
+    <p id="toggleParagraph" class="hidden">
+        <video class="video-player" controls>
+            <source src="Ester.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        Hey everyone! Welcome to Cookie Hunting! Now, before we get started, let me just tell you—this game was made by Drew, and let me tell you, Drew’s got skills when it comes to websites! He’s like the master of all things techy, just like how I’m the master of growing pumpkins. And trust me, my pumpkins are huge. Some of them are so big, they might just beat you in a race (if pumpkins could race, that is). Now, let’s talk about how the game works! It’s actually pretty simple. To start, you will get a special piece of paper from Drew, and on that paper is the password to unlock the first account on Drew’s website. No need to worry; we’re all in this together! But wait—there’s a little more to it! This isn’t just a regular password, oh no. There’s a two-step security process. Like how you need to pass one pumpkin to pass the other pumpkin, to get to the other pumpkin. And when you get all of the pumpkins, then you can call it a batch of pumpkins. Once you type in the first password, you will see a question from the Bible. It will explain the story, and show you a math problem. Solve it and use the password to move on to the Binary numbers. The screen will show a bunch of ones and zeroes. At first, it might look a bit confusing, but trust me, it’s easier than you think! It’s like trying to find the perfect spot to grow pumpkins—they can be tricky, but once you figure it out, it’s easy! Here’s where the cheat sheet comes in. This cheat sheet will help you decode the ones and zeroes. You just have to remember: 1 = A, 2 = B, 3 = C, and so on. So if you see the number 20, you’ll know that’s the letter T. Easy, right? It’s kind of like figuring out the secret recipe for growing the biggest pumpkins—which, by the way, mine are huge. Once you’ve decoded all the numbers into letters, you’ll get a word. This word will unlock the next part of the game. It’s like a secret key to keep moving forward! After that, you’ll get a prompt that asks you to figure out which room has the next password. After you find the password in the next room, use the password to unlock the next account, etc, etc. It’ll go on like that until all the accounts have been unlocked. And, as always, should you ever find yourself in need of advice on growing pumpkins of such enormous proportions that they could double as landmarks, you know where to find me.
+    </p>
+
+</div>
+<!--    <img class="augusta-main" src="augusta.png" alt="A photo of Augusta University's main building">--> <!-- upload main photo-->
+</body>
+</html>
